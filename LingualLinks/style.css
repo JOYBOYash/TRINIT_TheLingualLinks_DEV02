@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alkatra&family=Blaka+Hollow&family=Blaka+Ink&family=Chokokutai&family=Delicious+Handrawn&family=Just+Another+Hand&family=Nabla&family=Sedgwick+Ave&family=Tektur:wght@900&family=Ysabeau+SC:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+}
+
+body
+{   background-image: url(/colorful_clouds_abstract_4k_hd_abstract-1920x1080.jpg);
+    /* background: rgb(255,216,233);
+    background: linear-gradient(90deg, rgba(255,216,233,1) 0%, rgba(217,177,209,1) 23%, rgba(179,182,222,1) 65%, rgba(181,210,245,1) 100%); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+h1{
+    color: #fff;
+}
+
+.logo{
+    text-align: center;
+   margin-top: 10px;
+    font-size: 50px;
+    color: white;
+}
+
+span{
+    color: #e3488b;
+    text-decoration: underline;
+}
+
+.form-bx{
+    width: 400px;
+  height: 500px;
+  backdrop-filter: blur(50px);
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transition: transform .6s ease, height .2s ease-in-out; */
+}
+
+.form-bx form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .5s ease;
+
+}
+
+/* .form-bx .register {
+    transform: translateX(-100%);
+} */
+.input-bx{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 40px 0px;
+}
+
+.register .input-bx{
+    margin: 30px 0px;
+}
+
+.input-bx input{
+    width: 60%;
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    overflow-x: hidden;
+
+}
+
+.input-bx label{
+    transition: 0.4s;
+    margin-left: -150px;
+}
+
+.input-bx input:focus ~ label, 
+.input-bx input:valid ~ label {
+    transform: translateY(-25px);
+}
+
+.input-bx ion-icon {
+    font-size: 22px;
+    margin-right: -150px;
+}
+
+.btn{
+    width: 25%;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 20px 0px;
+    border: none;
+    font-size: 16px;
+    transition: .5s ease-in-out;
+
+}
+
+.btn:hover{
+    background: #e3488b;
+    color: #fff;
+}
+
+.form-bx h5 {
+    cursor: pointer;
+}
+
+.loglink{
+    text-decoration: none;
+    color: black;
+    width: 80%;
+    align-self: center;
+    margin-left: 235px;
+}
+
+#bxuser{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+  height: 200px;
+  backdrop-filter: blur(50px);
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stud, .tut{
+    width: 80%;
+    align-items: center;
+}
+/* .stud{
+
+} */
+
+.navs{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.navlinks{
+    text-decoration: none;
+    color: #e3488b;
+    font-size: 20px;
+    padding: 15px;
+}
+.navlinks:hover{
+   
+    transition: .4s ease-in-out;
+    color: #fff;
+}
+.nav-bar{
+    padding: 5px;
+    display: flex;
+    height: 30%;
+    backdrop-filter: blur(40px);
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff ;
+}
+
+.section-head{
+   color: #fff;
+   text-align: center;
+   padding: 15px;
+}
+
+#acc-section{
+   margin-top: 40px;
+   display: flex;
+   flex-direction: column;
+}
+
+#test-section{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+.form-bx{
+    font-size: 12px;
+    align-items: center;
+}
+
+.input-bx{
+    background: none;
+    border: none;
+    margin: 20px;
+    border-bottom: 2px solid #fff;
+    outline: none;
+}
+.Tests{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.nav2{
+    height: 11%;
+}
+.save{
+    align-self: center;
+    justify-content:center ;
+}
+.newprof{
+    margin-top: 50px;
+    align-items: center;
+}
+.set{
+    margin-left: 12px;
+    justify-content: center;
+    align-items: center;
+}
+/* .set, .input-bx{
+    text-align: center;
+    align-self: center;
+} */

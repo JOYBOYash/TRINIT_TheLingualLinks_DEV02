@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alkatra&family=Blaka+Hollow&family=Blaka+Ink&family=Chokokutai&family=Delicious+Handrawn&family=Just+Another+Hand&family=Nabla&family=Sedgwick+Ave&family=Tektur:wght@900&family=Ysabeau+SC:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+}
+
+body
+{   
+    background: rgb(255,216,233);
+    background: linear-gradient(90deg, rgba(255,216,233,1) 0%, rgba(217,177,209,1) 23%, rgba(179,182,222,1) 65%, rgba(181,210,245,1) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+h1{
+    color: #fff;
+}
+
+.logo{
+    text-align: center;
+   margin-top: 100px;
+    font-size: 60px;
+    color: white;
+}
+
+span{
+    color: #e3488b;
+    text-decoration: underline;
+}
+
+.form-bx{
+    width: 400px;
+  height: 500px;
+  backdrop-filter: blur(50px);
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transition: transform .6s ease, height .2s ease-in-out; */
+}
+
+.form-bx form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .5s ease;
+
+}
+
+.form-bx .register {
+    transform: translateX(-100%);
+}
+.input-bx{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 40px 0px;
+}
+
+.register .input-bx{
+    margin: 30px 0px;
+}
+
+.input-bx input{
+    width: 60%;
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    overflow-x: hidden;
+
+}
+
+.input-bx label{
+    transition: 0.4s;
+    margin-left: -150px;
+}
+
+.input-bx input:focus ~ label, 
+.input-bx input:valid ~ label {
+    transform: translateY(-25px);
+}
+
+.input-bx ion-icon {
+    font-size: 22px;
+    margin-right: -150px;
+}
+
+.btn{
+    width: 25%;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 20px 0px;
+    border: none;
+    font-size: 16px;
+    transition: .5s ease-in-out;
+
+}
+.btn:hover{
+    background: #e3488b;
+    color: #fff;
+}
+.form-bx h5 {
+    cursor: pointer;
+}
+
+.change-form{
+    height: 520px;
+}
+
+.change-form .login{
+    transform: translateX(100%);
+}
+.change-form .register{
+    transform: translateX(0%);
+}

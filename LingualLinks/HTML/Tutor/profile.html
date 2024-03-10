@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | LinguaLink</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="nav-bar nav2">
+        <h1>Lingua<span>link</span></h1>
+          <div class="navs">
+            <a href="/HTML/Tutor/account.html" class="navlinks"> Account</a>
+            <a href="/HTML/Tutor/profile.html" class="navlinks"> Profile</a>
+            <a href="/HTML/Tutor/test.html" class="navlinks"> Tests</a>
+          </div>
+      </div>
+    <div class="prof-section">
+        <h1  class="section-head" >Language Profile</h1>
+        <form class="form-bx newprof">
+            <div class="set">
+                <br/>
+              <label for="language">Language:</label>
+              <input type="text" class="input-bx" id="language" name="language"><br>
+              <label for="experience">Experience:</label>
+              <input type="number" class="input-bx" id="experience" name="experience"><br>
+              <label for="pare">Price: rs/month</label>
+              <input type="text" class="input-bx" id="price" name="pare"><br>
+              <label for="time">Time-Slot:</label>
+              <input type="time" class="input-bx" id="timeslot" name="time"><br>
+              <input type="submit" id="save" onclick="save()" value="Submit" class = "btn">
+              <br/>
+            </div>
+          </form>
+    </div>
+    <script type="module">
+
+      // Firebase Script
+              import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+              import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+
+              const firebaseConfig = {
+                  apiKey: "AIzaSyBgd5TasgU1o1GFud1Nv98wiDTzNMzepnw",
+                  authDomain: "lingua-link-2907a.firebaseapp.com",
+                  databaseURL: "https://lingua-link-2907a-default-rtdb.asia-southeast1.firebasedatabase.app",
+                  projectId: "lingua-link-2907a",
+                  storageBucket: "lingua-link-2907a.appspot.com",
+                  messagingSenderId: "451405127324",
+                  appId: "1:451405127324:web:71d41d5791af4c6a68d759"
+                };
+              
+                // Initialize Firebase
+                const app = initializeApp(firebaseConfig);
+
+             
+
+                var lang = document.getElementById('language').value;
+                                  var frice = document.getElementById('price').value;
+                                  var exp = document.getElementById('experience').value;
+                                  var time = document.getElementById('timeslot').value;
+
+
+                function save(lang,frice,exp,time) {
+
+                              
+                                  const db = getDatabase(app);
+                                  set(ref(db, 'users/' + userId), {
+                                    language:lang,
+                                    price:frice,
+                                    experience:exp,
+                                    timeslot:time,
+                                  });
+
+                                  alert('saved successfully!')
+                                }
+  // Firebase Script
+
+
+    </script>
+</body>
+</html>

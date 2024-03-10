@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lingualink Tutor Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = 'center'>
+	<h1>Lingualink</h1>
+	
+	<div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Account')">Account</button>
+        <button class="tablinks" onclick="openTab(event, 'Profile')">Profile</button>
+        <button class="tablinks" onclick="openTab(event, 'Tests')">Tests</button>
+        <button class="tablinks" onclick="openTab(event, 'Wards')">Wards</button>
+    </div>
+	
+    <div id="Account" class="tabcontent">
+        <h3>Tutor Details</h3>
+        <p>Name : <br/>Contact : <br/>Languages : <br/>Money Earned : <br/><br/>To add languages visit profile page</p>
+        
+      </div>
+      
+      <div id="Profile" class="tabcontent">
+        <h3>languages</h3>
+        <table>
+            <tr>
+              <th>Language</th>
+              <th>Time slot</th>
+              <th>Price</th>
+              <th>Experiment</th>
+              <th></th>
+            </tr>
+            <tr>
+
+            </tr>
+        </table>
+        <br/>
+        <br/>
+        <a href="language.html">
+            <button class = "btn">Add Language</button>
+        </a>
+      </div>
+      
+      <div id="Tests" class="tabcontent">
+        <h3>Tests</h3>
+        <table>
+            <tr>
+              <th>Tests</th>
+              <th>Number of Questions</th>
+              <th>Total time</th>
+              <th>Number of tests taken</th>
+            </tr>
+            
+        </table>
+        <br/>
+        <br/>
+        <a href="test.html" target="_blank">
+            <button class = "btn">Add Test</button>
+        </a>
+
+      </div>
+      <div id="Wards" class="tabcontent">
+        <h3>Wards</h3>
+        
+      </div>
+
+      <script>
+        function openTab(evt, Tab) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(Tab).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+</div>
+</body>
+</html>
